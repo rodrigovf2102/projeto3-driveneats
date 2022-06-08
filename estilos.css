@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.conteudo{
+    width: 414px;
+}
+.topo{
+    width: 100%;
+    height: 92px;
+    background-color: red;
+}
+.cardapio{
+    height: 842px;
+    width: 100%;
+    background-color: blue;
+}
+.confirmar-pedido{
+    height: 92px;
+    width: 100%;
+    background-color: green;
+}
