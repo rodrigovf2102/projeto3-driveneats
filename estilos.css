@@ -18,23 +18,14 @@ body{
     top: 0;
     left: 0;
 }
-.cardapio{
-    height: 842px;
-    width: 100%;
-    background-color: blue;
-    padding-top: 92px;
-}
-.confirmar-pedido{
-    height: 92px;
-    width: 100%;
-    background-color: green;
-}
+
 .topo :nth-child(1){
     padding-top: 15px;
     padding-left: 20px;
     font-family: 'Righteous';
     font-size:44px;
     font-weight: 400;
+
 }
 .topo :nth-child(2){
     padding-left: 20px;
@@ -42,6 +33,38 @@ body{
     font-size:18;
     padding-top: 3px;
 }
+.cardapio{
+    height: 842px;
+    width: 100%;
+    background-color: blue;
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+.fundo{
+    height: 92px;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+.fundo > button{
+    width: 364px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 26.5px;
+}
+.fundo > button :nth-child(1){
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    width: 200px;
+}
+
 @media(max-widh:413){
     .conteudo{
         width:100%
