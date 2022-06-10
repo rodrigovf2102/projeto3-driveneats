@@ -103,7 +103,7 @@ body{
     font-size: 15px;
 }
 .opcao :nth-child(4){
-    padding-top: 5px;
+    padding-top: 2px;
     font-weight: 400;
     height: 24px;
     display: flex;
@@ -146,8 +146,8 @@ body{
     display: inline-flex;
     padding-left: 70px;
     height: 100%;
-    font-size: 20px;
-    color: rgb(50,183,47)
+    font-size: 100%;
+    color: rgb(50,183,47);
 }
 .esconder{
     display: none;
