@@ -25,8 +25,8 @@ function escolherPrato1(){
     {
         const botao = document.querySelector(".botao");
         botao.innerHTML ="Fechar Pedido";
-        const caixabotao = document.querySelector(".botao-fundo")
-        caixabotao.classList.add("colorirDeVerde")
+        const caixabotao = document.querySelector(".botao-fundo");
+        caixabotao.classList.add("colorirDeVerde");
     }
     else{
         const botao = document.querySelector(".botao");
@@ -353,8 +353,12 @@ function wpp(){
             if(i==8){texto+="Balde-Ovomaltine\n";total+=10.90;}
         }  
       }
-      texto+="Total: R$ "+total.toFixed(2);
-      url = url + encodeURIComponent(texto);
+      texto+="Total: R$"+total.toFixed(2);
+      const nome =prompt("Digite seu nome: ")
+      const endereço = prompt("Digite seu Endereço: ")
+      texto += "\n\n"+"Nome: "+nome;
+      texto += "\n"+"Endereço: "+endereço;
+      url =url+ encodeURIComponent(texto);
     if(element!=null){
         window.open(url);
     }
