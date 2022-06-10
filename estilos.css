@@ -124,7 +124,7 @@ body{
     left:0;
     right: 0;
 }
-.fundo > button{
+.botao-fundo{
     width: 364px;
     display: flex;
     justify-content: center;
@@ -132,15 +132,23 @@ body{
     border-radius: 26.5px;
     background-color: #CBCBCB;
 }
-.fundo > button :nth-child(1){
+
+.botao{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 20px;
     width: 200px;
     color: #FFFFFF;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .box-escolhido{
     box-shadow: 0 0 0 4px rgb(50,183,47);
+}
+.colorirDeVerde{
+    background-color:rgb(50,183,47) ;
 }
 .box-escolhido ion-icon{
     display: inline-flex;
