@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 
 <body>
@@ -26,44 +27,44 @@
         <div class="cardapio">
             <div class="texto-opcao1">Primeiro, seu prato</div>
             <div class="opcoes">
-                <div class="opcao">
+                <div class="opcao" onclick="escolherPrato1()">
                     <img src="images/frango_yin_yang 1.png">
                     <div>Frango Yin-Yang</div>
                     <div>Um pouco de batata, um pouco de salada</div>
-                    <div>R$14,90</div>
+                    <div>R$14,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherPrato2()">
                     <img src="images/quarteirao.png">
                     <div>Quarteirão</div>
                     <div>Hamburguer bovino, com queijo e picles</div>
-                    <div>R$12,90</div>
+                    <div>R$12,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherPrato3()">
                     <img src="images/whopper.png">
                     <div>Whopper</div>
                     <div>Hamburguer bovino, com tomate e alface</div>
-                    <div>R$13,90</div>
+                    <div>R$13,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
             </div>
             <div class="texto-opcao">Agora, sua bebida</div>
             <div class="opcoes">
-                <div class="opcao">
+                <div class="opcao" onclick="escolherPrato3()">
                     <img src="images/coquinha_gelada 1.png">
                     <div>Coquinha gelada</div>
                     <div>Lata 350ml</div>
-                    <div>R$4,90</div>
+                    <div>R$4,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="opcao">
                     <img src="images/refrimc.png">
                     <div>Coca do MC</div>
                     <div>Copo 500ml</div>
-                    <div>R$8,90</div>
+                    <div>R$8,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="opcao">
                     <img src="images/refribk.png">
                     <div>Pepsi do Bk</div>
                     <div>Copo 500ml</div>
-                    <div>R$7,90</div>
+                    <div>R$7,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
             </div>
             <div class="texto-opcao">Por fim, sua sobremesa</div>
@@ -72,19 +73,19 @@
                     <img src="images/pudim 1.png">
                     <div>Pudim</div>
                     <div>Apenas pudim</div>
-                    <div>R$7,90</div>
+                    <div>R$7,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="opcao">
                     <img src="images/sobremesamc.png">
                     <div>Top-Sundae</div>
                     <div>Sorvete</div>
-                    <div>R$8,90</div>
+                    <div>R$8,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
                 <div class="opcao">
                     <img src="images/sobremesabk.png">
                     <div>Balde-Ovomaltine</div>
                     <div>Sorvete</div>
-                    <div>R$10,90</div>
+                    <div>R$10,90<ion-icon name="checkmark-circle"></ion-icon></div>
                 </div>
             </div>
 
@@ -96,7 +97,7 @@
         </div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

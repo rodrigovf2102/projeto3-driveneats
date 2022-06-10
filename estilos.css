@@ -103,8 +103,14 @@ body{
     font-size: 15px;
 }
 .opcao :nth-child(4){
-    margin-top: 8px;
+    padding-top: 5px;
     font-weight: 400;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+.opcao ion-icon{
+    display: none;
 }
 .fundo{
     height: 92px;
@@ -132,6 +138,19 @@ body{
     font-size: 20px;
     width: 200px;
     color: #FFFFFF;
+}
+.box-escolhido{
+    box-shadow: 0 0 0 4px rgb(50,183,47);
+}
+.box-escolhido ion-icon{
+    display: inline-flex;
+    padding-left: 70px;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(50,183,47)
+}
+.esconder{
+    display: none;
 }
 @media(max-width:414px){
     .conteudo{
