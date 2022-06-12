@@ -46,10 +46,60 @@ function escolherSobremesa(element){
         caixabotao.classList.add("colorirDeVerde");
     }
 }
-function wpp(){
-    const element = document.querySelector(".colorirDeVerde")
+function stringParaNumero(elemento){
+    let aux="";
+    for(let i=0;i<elemento.length;i++){
+        if(!isNaN(elemento[i])){aux+=elemento[i];}
+        if(elemento[i]==","){aux+=".";}
+    }
+    return Number(aux);
+}
+function confirmacao(){
+    let element = document.querySelector(".colorirDeVerde")
     if(element!=null){
+        element = document.querySelector(".caixa-branca").classList.remove("esconder")
+    }
+    let comida = document.querySelector(".opcao.comida.box-escolhido :nth-child(2)").innerHTML;
+    let bebida = document.querySelector(".opcao.bebida.box-escolhido :nth-child(2)").innerHTML;
+    let sobremesa = document.querySelector(".opcao.sobremesa.box-escolhido :nth-child(2)").innerHTML;
+
+    let preçoComida = document.querySelector(".opcao.comida.box-escolhido :nth-child(4)").innerHTML;
+    let preçoBebida = document.querySelector(".opcao.bebida.box-escolhido :nth-child(4)").innerHTML;
+    let preçoSobremesa = document.querySelector(".opcao.sobremesa.box-escolhido :nth-child(4)").innerHTML;
     
+    let pcomida=stringParaNumero(preçoComida);
+    let pbebida=stringParaNumero(preçoBebida);
+    let psobremesa=stringParaNumero(preçoSobremesa);
+    console.log(pcomida);
+
+    let preçoTotal = pcomida+pbebida+psobremesa;
+    preçoTotal=preçoTotal.toFixed(2);
+    preçoTotal="R$"+preçoTotal;
+
+    const comidaSubstituir = document.querySelector(".caixa-verde :nth-child(2)");
+    const bebidaSubstituir = document.querySelector(".caixa-verde :nth-child(4)");
+    const sobremesaSubstituir = document.querySelector(".caixa-verde :nth-child(6)");
+
+    const preçoComidaSubstituir = document.querySelector(".caixa-verde :nth-child(3)");
+    const preçoBebidaSubstituir = document.querySelector(".caixa-verde :nth-child(5)");
+    const preçoSobremesaSubstituir = document.querySelector(".caixa-verde :nth-child(7)");
+    const preçoTotalSubstituir = document.querySelector(".caixa-verde :nth-child(9)")
+
+    comidaSubstituir.innerHTML=comida;
+    bebidaSubstituir.innerHTML=bebida;
+    sobremesaSubstituir.innerHTML=sobremesa;
+
+    preçoComidaSubstituir.innerHTML=preçoComida;
+    preçoBebidaSubstituir.innerHTML=preçoBebida;
+    preçoSobremesaSubstituir.innerHTML=preçoSobremesa;
+    preçoTotalSubstituir.innerHTML=preçoTotal;
+}
+function cancelar(){
+    const cancelar = document.querySelector(".caixa-branca");
+    cancelar.classList.add("esconder");
+}
+function wpp(){
+   
     const comidas = document.querySelectorAll(".opcao");
     let url = "https://wa.me/5531991929224?text=Olá,";
     let texto ="gostaria de fazer um pedido:\n\- Prato: ";
@@ -86,6 +136,6 @@ function wpp(){
       url =url+ encodeURIComponent(texto);
     
         window.open(url);
-    }
+
     
 }

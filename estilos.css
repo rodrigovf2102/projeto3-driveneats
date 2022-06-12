@@ -4,6 +4,7 @@
 body{
     display: flex;
     justify-content: center;
+
 }
 .conteudo{
     width: 414px;
@@ -158,7 +159,76 @@ body{
     font-size: 100%;
     color: rgb(50,183,47);
 }
+
+.caixa-branca{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,0.5);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .esconder{
+    display: none;
+}
+.caixa-verde{
+    width: 377px;
+    height: 353px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    background-color: rgb(23, 151, 21) ;
+    border-radius: 9px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.caixa-verde div{
+    display: flex;
+    font-weight: 400;
+    padding-bottom: 18px;
+    width: 60%;
+    padding-left: 15px;
+
+}
+.caixa-verde p{
+    padding-right: 25px;
+}
+.caixa-verde .titulo{
+    width: 100%;
+    font-weight: 700;
+    padding-top: 21px;
+    padding-left: 85px;
+    padding-bottom: 28px;
+}
+.caixa-verde :nth-child(8){
+    font-weight: 700;
+}
+.caixa-verde :nth-child(9) {
+    font-weight: 700;
+}
+.caixa-verde :nth-child(10){
+    width: 333px;
+    height: 52px;
+    background-color: white;
+    color: #50D074;
+    font-weight: 700;
+    border-radius: 26px;
+    padding-left: 60px;
+    padding-top: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.caixa-verde :nth-child(11){
+    padding-left: 140px;
+    padding-top: 15px;
+}
+.caixa-verde ion-icon{
     display: none;
 }
 @media(max-width:414px){
