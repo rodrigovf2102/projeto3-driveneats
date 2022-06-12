@@ -74,6 +74,7 @@ body{
 }
 .opcao{
     width: 172px;
+    cursor: pointer;
     height: auto;
     background-color: #FFFFFF;
     display: flex;
@@ -133,6 +134,7 @@ body{
     border: none;
     border-radius: 26.5px;
     background-color: #CBCBCB;
+    cursor: pointer;
 }
 
 .botao{
@@ -223,10 +225,12 @@ body{
     padding-top: 14px;
     margin-left: 20px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .caixa-verde :nth-child(11){
     padding-left: 140px;
     padding-top: 15px;
+    cursor: pointer;
 }
 .caixa-verde ion-icon{
     display: none;
